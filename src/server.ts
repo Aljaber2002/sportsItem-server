@@ -1,11 +1,8 @@
 import mongoose from 'mongoose';
 import app from './app';
 import config from './app/config';
-import cors from 'cors';
-import express from 'express';
+
 // parser
-app.use(cors());
-app.use(express.json());
 
 async function main() {
   try {
