@@ -5,4 +5,6 @@ export default {
   port: process.env.PORT,
   database_url: process.env.DB_URL,
   salt_round: process.env.saltRounds,
+  accessToken: process.env.accessToken,
+  expireToken: process.env.expireToken,
 };
