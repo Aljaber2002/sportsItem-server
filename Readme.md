@@ -1,5 +1,7 @@
 project Name : sports items management (Backend)
 
+live url: https://assignment-5-server-beta.vercel.app/
+
 Usage Technoligies:
 
 1.For authentication purpose i have used jsonwebtoken
