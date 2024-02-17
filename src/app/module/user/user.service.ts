@@ -6,7 +6,12 @@ const createUserInDb = async (payload: Tuser) => {
   const createUser = await userModel.create(payload);
   return createUser;
 };
+const getUserFromdb = async () => {
+  const users = await userModel.find({}).exec();
+  return users;
+};
 
 export const userService = {
   createUserInDb,
+  getUserFromdb,
 };

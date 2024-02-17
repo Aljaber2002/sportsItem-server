@@ -7,6 +7,7 @@ export const productRoute = express.Router();
 
 productRoute.post(
   '/create-product',
+  VerifyAuth(),
 
   productController.product,
 );
@@ -23,4 +24,4 @@ productRoute.put(
   VerifyAuth(),
   productController.updateProductCOntroller,
 );
-productRoute.get('/search', productController.filterDoc);
+productRoute.get('/search', VerifyAuth(), productController.filterDoc);
