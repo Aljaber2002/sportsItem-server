@@ -10,6 +10,7 @@ export const userSchema = new Schema<Tuser>({
     min: [6, 'Must be at least 6, got {VALUE}'],
     max: 12,
   },
+  role: { type: String, required: true },
 });
 
 export const userModel = model<Tuser>('user', userSchema);
